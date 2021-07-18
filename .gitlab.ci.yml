@@ -1,0 +1,11 @@
+stages:
+  - test
+  - run
+
+test:
+  stage: test
+  script: python test.py
+
+run:
+  stage: run
+  script: python main.py
